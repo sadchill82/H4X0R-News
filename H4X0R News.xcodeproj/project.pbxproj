@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA1E4F6E2AA382D50038FCD7 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E4F6D2AA382D50038FCD7 /* PostData.swift */; };
+		CA1E4F712AA395530038FCD7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E4F702AA395530038FCD7 /* DetailView.swift */; };
+		CA1E4F732AA3D9720038FCD7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E4F722AA3D9720038FCD7 /* WebView.swift */; };
 		CA9CAE222AA29963007EBC2F /* H4X0R_NewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CAE212AA29963007EBC2F /* H4X0R_NewsApp.swift */; };
 		CA9CAE242AA29963007EBC2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CAE232AA29963007EBC2F /* ContentView.swift */; };
 		CA9CAE262AA29966007EBC2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9CAE252AA29966007EBC2F /* Assets.xcassets */; };
 		CA9CAE2A2AA29966007EBC2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9CAE292AA29966007EBC2F /* Preview Assets.xcassets */; };
+		CA9CAE322AA29C72007EBC2F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CAE312AA29C72007EBC2F /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA1E4F6D2AA382D50038FCD7 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		CA1E4F702AA395530038FCD7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CA1E4F722AA3D9720038FCD7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		CA9CAE1E2AA29963007EBC2F /* H4X0R News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "H4X0R News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9CAE212AA29963007EBC2F /* H4X0R_NewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H4X0R_NewsApp.swift; sourceTree = "<group>"; };
 		CA9CAE232AA29963007EBC2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA9CAE252AA29966007EBC2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA9CAE272AA29966007EBC2F /* H4X0R_News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = H4X0R_News.entitlements; sourceTree = "<group>"; };
 		CA9CAE292AA29966007EBC2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA9CAE312AA29C72007EBC2F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA1E4F6F2AA395300038FCD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA9CAE232AA29963007EBC2F /* ContentView.swift */,
+				CA1E4F702AA395530038FCD7 /* DetailView.swift */,
+				CA1E4F722AA3D9720038FCD7 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CA9CAE152AA29963007EBC2F = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				CA9CAE212AA29963007EBC2F /* H4X0R_NewsApp.swift */,
-				CA9CAE232AA29963007EBC2F /* ContentView.swift */,
+				CA1E4F6F2AA395300038FCD7 /* Views */,
+				CA9CAE302AA29C56007EBC2F /* Models */,
 				CA9CAE252AA29966007EBC2F /* Assets.xcassets */,
 				CA9CAE272AA29966007EBC2F /* H4X0R_News.entitlements */,
 				CA9CAE282AA29966007EBC2F /* Preview Content */,
@@ -67,6 +86,15 @@
 				CA9CAE292AA29966007EBC2F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA9CAE302AA29C56007EBC2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA9CAE312AA29C72007EBC2F /* NetworkManager.swift */,
+				CA1E4F6D2AA382D50038FCD7 /* PostData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9CAE322AA29C72007EBC2F /* NetworkManager.swift in Sources */,
+				CA1E4F6E2AA382D50038FCD7 /* PostData.swift in Sources */,
 				CA9CAE242AA29963007EBC2F /* ContentView.swift in Sources */,
+				CA1E4F732AA3D9720038FCD7 /* WebView.swift in Sources */,
+				CA1E4F712AA395530038FCD7 /* DetailView.swift in Sources */,
 				CA9CAE222AA29963007EBC2F /* H4X0R_NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,10 +294,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "H4X0R News/H4X0R_News.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R News/Preview Content\"";
-				DEVELOPMENT_TEAM = BVVZUT9685;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -286,8 +319,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sadchill82.H4X0R-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,10 +336,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "H4X0R News/H4X0R_News.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R News/Preview Content\"";
-				DEVELOPMENT_TEAM = BVVZUT9685;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -324,8 +361,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sadchill82.H4X0R-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
